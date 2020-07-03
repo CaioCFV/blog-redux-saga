@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as RedditActions from '../../store/actions';
 
-function Posts({modules,getPosts}){
+function Posts({modules}){
   
     return(
         <section className="result max-container">

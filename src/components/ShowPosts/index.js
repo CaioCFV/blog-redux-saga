@@ -4,13 +4,11 @@ import { bindActionCreators } from 'redux';
 import * as RedditActions from '../../store/actions';
 
 function ShowPosts({modules,getPosts}){
-    useEffect(()=>{
+    
+    useEffect(function(){
         getPosts();
-        setTimeout(()=>{
-            initVitrine();
-        },1000)
-       
-    },[]);
+        initVitrine();
+    },[])
 
     function initVitrine(){
         const vitrineElement = document.querySelector('.vitrine-posts');

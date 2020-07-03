@@ -1,4 +1,4 @@
-import {takeEvery,select,takeLatest,call,put,take} from 'redux-saga/effects';
+import {takeLatest,call,put,take} from 'redux-saga/effects';
 import axios from 'axios';
 
 function*  apiGet(){
