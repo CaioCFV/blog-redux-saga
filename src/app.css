@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.max-container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/*HEADER*/
+
+.main-head {
+    background: #C35576;
+    padding: 15px 0;
+}
+
+.main-head h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.logo-head {
+    max-width: 100px;
+    margin-right: 25px;
+}
+
+.main-head div {
+    display: flex;
+    align-items: center;
+}
+
+
+/*DESTAQUES*/
+
+.vitrine-posts {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+}
+
+.post-item {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts {
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.post-container-title {
+    color: #C35576;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-posts {
+    scrollbar-color: #C35576 #D9D9D9;
+    scrollbar-width: 1px;
+}
+
+.container-posts::-webkit-scrollbar {
+    width: 1px;
+    padding-right: 1px;
+    scrollbar-width: 1px;
+    height: 5px;
+}
+
+.container-posts::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    margin-bottom: 37px;
+}
+
+.container-posts::-webkit-scrollbar-thumb {
+    background: #C35576;
+    border-radius: 0px;
+}
+
+
+/*POSTS*/
+
+.post-title {
+    font-size: 20px;
+    color: #232323;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C35576;
+    text-align: center;
+}
+
+.post-image img {
+    height: 500px;
+    width: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-image {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.post-decription p {
+    color: #A8A8A8;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-decription a {
+    background: #C35576;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 150px;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .3);
+}
+
+.post-decription small::before {
+    content: "Publicado em: ";
+    font-weight: normal;
+}
+
+.post-decription small {
+    font-weight: bolder;
+    color: #202020;
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+
+
+/*seach*/
+
+.search-posts {
+    margin-bottom: 80px;
+}
+
+.search-posts form {
+    display: flex;
+    position: relative;
+}
+
+.search-posts input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+.search-posts button {
+    width: 90px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    border-radius: 0px 10px 10px 0px;
+    background: url('https://resources.saudifitness.com.br/resources/img/lupa.png?101') no-repeat #C35576;
+    background-size: 30px;
+    background-position: center;
+    font-size: 0;
+    border: 0;
+}
+
+section.result-posts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+}
+
+.result-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+article.result-item p {
+    color: #A8A8A8;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+article.result-item a {
+    background: #C35576;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+article.result-item small {
+    display: none;
+}
+
+
+/*footer*/
+
+footer.footer-container {
+    background: #C35576;
+    margin-top: 150px;
+}
+
+footer.footer-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+img.logo-footer {
+    width: 250px;
+}
+
+h1.title-footer {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+h4.result-title {
+    margin-top: 10px;
+    border-bottom: 2px solid #C35576;
+    margin-bottom: 10px;
+    height: 70px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
